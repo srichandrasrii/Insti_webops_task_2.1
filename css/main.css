@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.left_box {
+  position: relative;
+  color: white;
+  margin: 0;
+  display: inline-block;
+  width: 40%;
+  padding-left: 12%;
+  padding-top: 14%;
+}
+
+.left_box .main {
+  width: 75%;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+
+.left_box .description {
+  width: 90%;
+}
+
+.right_box {
+  position: absolute;
+  display: inline-block;
+  width: 35%;
+  padding-top: 5em;
+  padding-right: 2%;
+  font-family: 'Poppins';
+}
+
+.right_box .pricing_box {
+  background-color: #6055a5;
+  color: white;
+  border-radius: .5em;
+  text-align: center;
+  padding: 4px;
+  -webkit-box-shadow: 0 8px rgba(20, 20, 20, 0.2);
+          box-shadow: 0 8px rgba(20, 20, 20, 0.2);
+}
+
+.right_box .form_box {
+  background-color: white;
+  border-radius: .5em;
+  padding: 2.25em;
+  padding-top: 1.75em;
+  position: relative;
+  top: 2em;
+  padding-bottom: 1em;
+  -webkit-box-shadow: 0 8px rgba(20, 20, 20, 0.15);
+          box-shadow: 0 8px rgba(20, 20, 20, 0.15);
+}
+
+.right_box input {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #2c2c2e;
+}
+
+.right_box input[type=submit]:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+.right_box .submit-but {
+  color: white;
+  background-color: #38cc8c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  -webkit-box-shadow: 0 -3px rgba(20, 20, 20, 0.2) inset;
+          box-shadow: 0 -3px rgba(20, 20, 20, 0.2) inset;
+}
+
+.right_box .terms_conditions {
+  font-size: .75em;
+  font-weight: 600;
+  text-align: center;
+  color: #b9b6d3;
+}
+
+.right_box span {
+  color: #ff7a7a;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .right_box {
+    width: 22em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .left_box {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 0%;
+  }
+  .left_box .main {
+    font-size: 1.9em;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+  }
+  .left_box .description {
+    font-size: .9em;
+    font-weight: 500;
+    width: auto;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+  .right_box {
+    display: block;
+    width: auto;
+    padding-top: 3em;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5em;
+  }
+  .right_box .pricing_box {
+    width: auto;
+    border-radius: .5em;
+    text-align: center;
+    padding: 4px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.left_box{
+    position: relative;
+    color: white;
+    margin: 0;
+    display: inline-block;
+    width: 40%;
+    padding-left: 12%;
+    padding-top: 14%;
+
+    .main {
+        width: 75%;
+        font-size: 3em;
+        line-height: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+.right_box {
+    position: absolute;
+    display: inline-block;
+    width: 35%; 
+    padding-top: 5em;
+    padding-right: 2%;
+    font-family: 'Poppins';
+
+    .pricing_box {
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        border-radius: .5em;
+        text-align: center;
+        padding: 4px;
+        box-shadow: 0 8px rgba(20,20,20,0.2);
+    }
+
+    .form_box {
+        background-color: white;
+        border-radius: .5em;
+        padding: 2.25em ;
+        padding-top: 1.75em;
+        position: relative;
+        top: 2em;
+        padding-bottom: 1em;
+        box-shadow: 0 8px rgba(20,20,20,0.15);
+
+    }
+
+    input {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #2c2c2e;
+
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+        cursor: pointer;
+      }
+
+    .submit-but {
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 0.9em;
+        box-shadow: 0 -3px rgba(20,20,20,0.2) inset;
+    }
+
+    .terms_conditions {
+        font-size: .75em;
+        font-weight: 600;
+        text-align: center;
+        color: hsl(246, 25%, 77%);
+    }
+
+    span {
+        color: hsl(0, 100%, 74%);
+        cursor:pointer;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .right_box {
+        width: 22em;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .left_box {
+        display: block;
+        width: auto;
+        text-align: center;
+        padding: 0%;
+        
+        .main {
+            font-size: 1.9em;
+            width: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 20%;
+        }
+        .description {
+            font-size: .9em;
+            font-weight: 500;
+            width: auto;
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+        }
+    }
+
+    .right_box {
+        display: block;
+        width: auto; 
+        padding-top: 3em;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 5em;
+    
+        .pricing_box {
+            width: auto;
+            border-radius: .5em;
+            text-align: center;
+            padding: 4px;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+}
